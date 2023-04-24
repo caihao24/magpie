@@ -1,0 +1,2 @@
+name,type,reason
+vm_manure_recycling_detailed,input,questionnaire

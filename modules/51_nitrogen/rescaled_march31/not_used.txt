@@ -1,0 +1,3 @@
+name,type,reason
+vm_res_recycling_detailed,input,questionnaire
+vm_manure_recycling_detailed,input,questionnaire
