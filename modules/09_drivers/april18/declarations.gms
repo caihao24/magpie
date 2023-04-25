@@ -6,7 +6,6 @@
 *** |  Contact: magpie@pik-potsdam.de
 
 parameters
-parameters
 * Population
   im_pop_iso(t_all,iso)                        Population (mio. per yr)
   im_pop(t_all,i)                              Population (mio. per yr)

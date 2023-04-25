@@ -28,6 +28,21 @@
                  *fm_attributes("ge",k_noconc53)*0.065)
   ) * (1-sum(ct, im_maccs_mitigation(ct,i2,"ent_ferm","ch4")));
 
+  q53_emissionbal_ch4_ruminants_ent_ferm(i2) ..
+    v53_emissionbal_ch4_ruminants_ent_ferm(i2) =e= 1/55.65 *
+   (sum(k_conc53, vm_dem_feed(i2,"livst_rum",k_conc53)
+                 *fm_attributes("ge",k_conc53)*0.03)
+                 + sum(k_noconc53,vm_dem_feed(i2,"livst_rum",k_noconc53)
+                  *fm_attributes("ge",k_noconc53)*0.065)
+   ) * (1-sum(ct, im_maccs_mitigation(ct,i2,"ent_ferm","ch4")));
+
+   q53_emissionbal_ch4_milk_ent_ferm(i2) ..
+     v53_emissionbal_ch4_milk_ent_ferm(i2) =e= 1/55.65 *
+    (sum(k_conc53, vm_dem_feed(i2,"livst_milk",k_conc53)
+                  *fm_attributes("ge",k_conc53)*0.065)
+                  + sum(k_noconc53,vm_dem_feed(i2,"livst_milk",k_noconc53)
+                   *fm_attributes("ge",k_noconc53)*0.065)
+    ) * (1-sum(ct, im_maccs_mitigation(ct,i2,"ent_ferm","ch4")));
 *' As such, methane from enteric fermentation depends on the feed quality and the purpose of livestock farming.
 *' The feed quality (measured by energy content of the feed type) can be `k_conc53`
 *' (with high energy contents, for example, temperate and tropical cereals, maize,pulses) or `k_noconc53`
